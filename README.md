@@ -1,24 +1,5 @@
-# Introduction #
-
-* `Created by:` Bastiaan Jacobs
-* `Date:` 15-07-2017
-* `Version: ` 1.0.0.2
-* `Used at the following projects \ customer:` Macaw
-* `Status` Reusable 
-
-SharePoint Branding Deployment Package (BDP) for applying front-end design solutions on the SharePoint platform. This solution is build on [nodejs](https://nodejs.org) and [gulp](https://gulpjs.com/).
-
-![alt text](bdp.png "nodejs gulp npm logo")
-
-### Applies to ###
--  Office 365 Multi Tenant (MT)
--  Office 365 Dedicated (D)
--  SharePoint 2013 on-premises
-
-# Prerequisites #
-In order to run the script nodejs will need to be installed/configured. You can obtain nodejs from this [Link](https://nodejs.org). After installing nodejs a restart of the operating system may be necessary.
-
 # Usage #
+In order to run the script nodejs will need to be installed/configured. You can obtain nodejs from this [Link](https://nodejs.org). After installing nodejs a restart of the operating system may be necessary.
 
 ```
 npm install
