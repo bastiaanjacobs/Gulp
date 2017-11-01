@@ -50,9 +50,6 @@ _*Items will be distributed from the src to the dist folder._
 }
 ```
 
-# Feedback #
-Place your feedback here
-
 # Updates / Version History #
 * V1.0.0.3 added livereload
 * V1.0.0.2 added sourcemaps
