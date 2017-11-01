@@ -1,22 +1,83 @@
-html {
-    body {
-        background: url('../img/placeholder.jpg') no-repeat center;
-        background-size: cover;
-        margin: 0;
-        padding: ($space/1.5);
-        border: ($space/15) solid rgba($secondary-color, .5);
-        color: $secondary-color;
-        h1 {
-            color: $primary-color;
-        }
-        h2 {
-            color: $secondary-color;
-        }
-        h3 {
-            color: $secondary-color;
-        }
-        p {
-            color: $secondary-color;
-        }
+body {
+    background: url(../img/placeholder.jpg) no-repeat center;
+    background-size: cover;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    position: relative;
+    border: 1px solid $secondary-color;
+}
+
+.row {
+    width: 100%
+}
+
+.row:before,
+.row:after { content: ''; display: table; }
+.row:after { clear: both; }
+
+[class*=col-] {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 15px
+}
+
+[class*=col-]>[class*=col-] {
+    padding: 0
+}
+
+@media screen and (min-width: 768px) {
+    .col-md-1 {
+        width:8.33333%
+    }
+
+    .col-md-2 {
+        width: 16.66667%
+    }
+
+    .col-md-3 {
+        width: 25%
+    }
+
+    .col-md-4 {
+        width: 33.33333%
+    }
+
+    .col-md-5 {
+        width: 41.66667%
+    }
+
+    .col-md-6 {
+        width: 50%
+    }
+
+    .col-md-7 {
+        width: 58.33333%
+    }
+
+    .col-md-8 {
+        width: 66.66667%
+    }
+
+    .col-md-9 {
+        width: 75%
+    }
+
+    .col-md-10 {
+        width: 83.33333%
+    }
+
+    .col-md-11 {
+        width: 91.66667%
+    }
+
+    .col-md-12 {
+        width: 100%
+    }
+
+    header .banner {
+        height: 215px
     }
 }
