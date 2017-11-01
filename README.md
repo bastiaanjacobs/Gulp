@@ -73,6 +73,7 @@ _*Items will be distributed from the src to the dist folder._
 Place your feedback here
 
 # Updates / Version History #
+* V1.0.0.3 added livereload
 * V1.0.0.2 added sourcemaps
 * V1.0.0.1 added webserver
 * V1.0.0.1 initial version
