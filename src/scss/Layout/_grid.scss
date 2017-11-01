@@ -1,0 +1,21 @@
+html {
+    body {
+        margin: 0;
+        padding: (10px/2);
+        border: ($space/15) solid rgba($secondary-color, .5);
+        background: lighten($primary-color, 20%);
+        color: $secondary-color;
+        h1 {
+            color: $secondary-color;
+        }
+        h2 {
+            color: $secondary-color;
+        }
+        h3 {
+            color: $secondary-color;
+        }
+        p {
+            color: $secondary-color;
+        }
+    }
+}
