@@ -15,7 +15,6 @@ npm install [package] --save-dev
 
 * `gulp build` Run all tasks together
 * `gulp clean` Clean dist folder
-* `gulp serve` Serve dist folder to SharePoint
 * `gulp pagelayouts` Run task to build Page Layouts
 * `gulp displaytemplates` Run task to build Display Templates
 * `gulp scss` Run task to build scss
@@ -23,32 +22,18 @@ npm install [package] --save-dev
 * `gulp scripts` Run task to distribute scripts
 * `gulp fonts` Run task to distribute font
 * `gulp components` Run task to distribute component items like .txt or .html snippets
-* `gulp webserver` Run local server
+* `gulp` Run local server with watch task and Browsersync
 
 _*Items will be distributed from the src to the dist folder._
 
 # File structure #
 * `gulpfile.js` Gulp tasks and configuration files
-* `package.json` Specifics of npm's package.json handling including devDependencies 
-* `config.json` SharePoint Authentication needed for serve task (see example below)
+* `package.json` Specifics of npm's package.json handling including dependencies
 
 # Folder structure #
 * `dist` Generated distribution folder for serving files to SharePoint
 * `src` Local source files stored in source control
 * `node modules` Generated folder containing node modules from package.json
-
-# Config File #
-> _config.json
-```
-{
-    "_comment": "do not share credentials",
-    
-    "username": "<username>",
-    "password": "<password>",
-    "site": "<site>",
-    "publish": "true"
-}
-```
 
 # Updates / Version History #
 * V1.0.0.3 added livereload
