@@ -1,8 +1,0 @@
-{
-    "_comment": "do not share credentials",
-    
-    "username": "<username>",
-    "password": "<password>",
-    "site": "<site>",
-    "publish": "true"
-}

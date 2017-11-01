@@ -102,7 +102,7 @@ gulp.task('watch', ['scss', 'components'], function(done) {
 });
 
 // use default task to launch Browsersync and watch scss and html files
-gulp.task('default', ['scss','components'], function () {
+gulp.task('default', ['scss','components','images'], function () {
 
     // Serve files from the root of this project
     browserSync.init({
@@ -123,28 +123,3 @@ gulp.task('clean', function() {
     return gulp.src('dist/*', { read: false })
     .pipe(clean());
 });
-
-// serve files to SharePoint
-gulp.task('serve', function() {
-    var syncsettings = settings.get();
-
-    gulp.src('dist/**/**.*', { base: 'dist' })
-    .pipe(spsync(syncsettings));
-});
-
-///// settings /////
-var settings = (function() {
-var config = require('./_config.json');
-    return {
-        get: function() {
-            return {
-                username: config.username,
-                password: config.password,
-                site: config.site,
-                libraryPath: config.libraryPath,
-                publish: config.publish,
-            }
-        }
-    }
-})();
-module.exports = settings;
