@@ -38,7 +38,7 @@ gulp.task('scss', function () {
     .pipe(sourcemaps.write('./_sourcemaps'))
 
     // push files to destination folder
-    .pipe(gulp.dest('dist/' + macaw_dir + '/Style Library/css'));    
+    .pipe(gulp.dest('dist/Style Library/' + macaw_dir + '/css'));    
 });
 
 // process html files
@@ -49,7 +49,7 @@ gulp.task('components', function () {
         basepath: '@file'
     }))
     // push files to destination folder
-    .pipe(gulp.dest('dist/' + macaw_dir + '/Style Library/components'))
+    .pipe(gulp.dest('dist/Style Library/' + macaw_dir + '/components'))
 });
 
 // process image files
@@ -57,7 +57,7 @@ gulp.task('images', function () {
     return gulp.src('src/img/**/*.{gif,jpg,png,svg}')
 
     // push files to destination folder
-    .pipe(gulp.dest('dist/' + macaw_dir + '/Style Library/img'))
+    .pipe(gulp.dest('dist/Style Library/' + macaw_dir + '/img'))
 });
 
 // process script files
@@ -65,13 +65,13 @@ gulp.task('scripts', function () {
     return gulp.src('src/js/**/*.js')
 
     // push files to destination folder
-    .pipe(gulp.dest('dist/' + macaw_dir + '/Style Library/js'))
+    .pipe(gulp.dest('dist/Style Library/' + macaw_dir + '/js'))
 
     // push vendor files to destination folder
     var jquery = gulp.src(src_jquery + '/jquery.min.js')
-    .pipe(gulp.dest('dist/' + macaw_dir + '/Style Library/js/vendor'))
+    .pipe(gulp.dest('dist/Style Library/' + macaw_dir + '/js/vendor'))
     var momentjs = gulp.src(src_momentjs + '/moment.min.js')
-    .pipe(gulp.dest('dist/' + macaw_dir + '/Style Library/js/vendor'))
+    .pipe(gulp.dest('dist/Style Library/' + macaw_dir + '/js/vendor'))
 });
 
 // process font files
@@ -79,7 +79,7 @@ gulp.task('fonts', function () {
     return gulp.src('src/font/**/*.{eot,svg,ttf,woff,woff2,otf}')
 
     // push files to destination folder
-    .pipe(gulp.dest('dist/' + macaw_dir + '/Style Library/font'))
+    .pipe(gulp.dest('dist/Style Library/' + macaw_dir + '/font'))
 });
 
 // process pagelayout files
@@ -107,7 +107,7 @@ gulp.task('default', ['scss','components','images'], function () {
     // Serve files from the root of this project
     browserSync.init({
         server: {
-            baseDir: "dist/" + macaw_dir + '/Style Library',
+            baseDir: "dist/Style Library/" + macaw_dir,
             index: '/components/mcw.index.html'
         }
     });
