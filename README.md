@@ -11,7 +11,7 @@ npm install
 npm install [package] --save-dev
 ```
 
-# Build tasks #
+# Tasks #
 
 * `gulp build` Run all tasks together
 * `gulp clean` Clean dist folder
